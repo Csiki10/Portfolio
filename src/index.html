@@ -8,6 +8,7 @@
     <title>Csiki's portfolio</title>
   </head>
   <body class="text-gray-800">
+    <!-- Navigation -->
     <nav class="bg-gray-800 text-white shadow-md">
       <div class="relative py-5 px-10 max-w-7xl mx-auto">
         <!-- Main menu. -->
@@ -17,14 +18,18 @@
           </div>
           <!-- Desktop menu points -->
           <div class="hidden sm:flex gap-6 text-lg font-medium">
-            <a class="hover:text-yellow-400" href="#" alt="About">About</a>
-            <a class="hover:text-yellow-400" href="#" alt="Technologies"
+            <a
+              class="hover:text-yellow-400"
+              href="#technologies"
+              alt="Technologies"
               >Technologies</a
             >
-            <a class="hover:text-yellow-400" href="#" alt="Projects"
+            <a class="hover:text-yellow-400" href="#projects" alt="Projects"
               >Projects</a
             >
-            <a class="hover:text-yellow-400" href="#" alt="Socials">Socials</a>
+            <a class="hover:text-yellow-400" href="#socials" alt="Socials"
+              >Socials</a
+            >
           </div>
           <!-- Mobile menu icon -->
           <div class="flex items-center sm:hidden">
@@ -81,25 +86,18 @@
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class="sm:hidden" id="mobile-menu">
           <div class="space-y-1 px-2 pb-3 pt-2">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a
-              href="#"
-              class="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700 hover:text-white"
-              aria-current="page"
-              >About</a
-            >
-            <a
-              href="#"
+              href="#technologies"
               class="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700 hover:text-white"
               >Technologies</a
             >
             <a
-              href="#"
+              href="#projects"
               class="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700 hover:text-white"
               >Projects</a
             >
             <a
-              href="#"
+              href="#socials"
               class="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700 hover:text-white"
               >Socials</a
             >
@@ -107,13 +105,14 @@
         </div>
       </div>
     </nav>
+
     <main class="min-h-screen max-w-7xl mx-auto">
       <!-- Hero -->
       <section
         class="my-10 md:my-20 flex flex-col-reverse md:flex-row justify-between items-center"
       >
         <!-- Text -->
-        <div class="flex flex-col py-12 pr-0 px-10 gap-6 flex-1">
+        <div class="flex flex-col py-12 px-10 gap-6 flex-1">
           <h1 class="text-5xl font-bold leading-tight">
             <span class="text-yellow-400">Hi, I'm Benedek Csikós,</span>
             Software Developer
@@ -140,12 +139,91 @@
         </div>
       </section>
 
+      <!-- About -->
+      <section class="my-10 md:my-20" id="about">
+        <div class="px-10">
+          <h1 class="text-5xl font-bold py-8">About</h1>
+          <div class="flex flex-wrap gap-4">
+            <!-- Card -->
+            <div
+              class="flex flex-row space-y-14 shadow-xl rounded-xl p-3 justify-center"
+            >
+              <div class="flex items-center">
+                <img
+                  style="height: 6rem"
+                  src="assets/obuda1.png"
+                  alt="Obuda university"
+                />
+              </div>
+              <div class="flex flex-col justify-between p-2">
+                <div class="">
+                  <h2 class="text-2xl font-bold mb-3">Obuda University</h2>
+                  <h3 class="text-xl font-semibold">Computer Engineer - BSC</h3>
+                  <h4 class="text-md">Software design and development</h4>
+                </div>
+                <div>
+                  <p>2020.09 – 2024.01</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="flex flex-row space-y-14 shadow-xl rounded-xl p-3 justify-center"
+            >
+              <div class="flex items-center">
+                <img
+                  style="height: 4rem"
+                  src="assets/evosoft.png"
+                  alt="Obuda university"
+                />
+              </div>
+              <div class="flex flex-col justify-between p-2">
+                <div class="">
+                  <h2 class="text-2xl font-bold mb-3">Evosot hungary</h2>
+                  <h3 class="text-xl font-semibold">Full-Stack Trainee</h3>
+                  <h4 class="text-md">Full-Stack developer: .NET MVC</h4>
+                </div>
+                <div>
+                  <p>2022.12 – 2024.02</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="flex flex-row space-y-14 shadow-xl rounded-xl p-3 justify-center"
+            >
+              <div class="flex items-center">
+                <img
+                  style="height: 4rem"
+                  src="assets/unix.UNK"
+                  alt="Obuda university"
+                />
+              </div>
+              <div class="flex flex-col justify-between p-2">
+                <div class="flex flex-col space-y-2">
+                  <h2 class="text-2xl font-bold">UNIX Automotive</h2>
+                  <h3 class="text-xl font-semibold">Web developer</h3>
+                  <h4 class="text-md">Full-Stack developer: Angular .NET</h4>
+                </div>
+                <div>
+                  <p class="bg-gray-100 rounded-full w-fit py-1 px-2">
+                    2024.03 – 2024.06
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Technologies -->
-      <section class="my-10 md:my-20">
+      <section class="my-10 md:my-20" id="technologies">
         <div class="px-10">
           <h1 class="text-5xl font-bold py-8">Technologies</h1>
-          <div class="flex flex-wrap gap-6">
-            <div>
+          <div class="flex flex-wrap gap-6 justify-center">
+            <div class="px-3 py-2 shadow-xl rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -192,7 +270,7 @@
                 ></path>
               </svg>
             </div>
-            <div>
+            <div class="px-3 py-2 shadow-xl rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -225,7 +303,7 @@
                 <path fill="#eee" d="M18 24H24V28H18z"></path>
               </svg>
             </div>
-            <div>
+            <div class="px-3 py-2 shadow-xl rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -249,7 +327,7 @@
                 ></path>
               </svg>
             </div>
-            <div>
+            <div class="px-3 py-2 shadow-xl rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -273,7 +351,7 @@
                 ></path>
               </svg>
             </div>
-            <div>
+            <div class="px-3 py-2 shadow-xl rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -289,7 +367,7 @@
                 ></path>
               </svg>
             </div>
-            <div>
+            <div class="px-3 py-2 shadow-xl rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -304,7 +382,7 @@
                 ></path>
               </svg>
             </div>
-            <div>
+            <div class="px-3 py-2 shadow-xl rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -323,7 +401,7 @@
                 ></path>
               </svg>
             </div>
-            <div>
+            <div class="px-3 py-2 shadow-xl rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -338,63 +416,16 @@
                 ></path>
               </svg>
             </div>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="96"
-                height="96"
-                viewBox="0 0 100 100"
-              >
-                <path
-                  fill="#5C7CFA"
-                  d="M69,82H31c-7.18,0-13-5.82-13-13V31c0-7.18,5.82-13,13-13h38c7.18,0,13,5.82,13,13v38	C82,76.18,76.18,82,69,82z"
-                ></path>
-                <path
-                  fill="#1f212b"
-                  d="M66.5,78h-33C27.159,78,22,72.841,22,66.5v-33C22,27.159,27.159,22,33.5,22h33	c0.353,0,0.701,0.021,1.046,0.053c0.275,0.025,0.477,0.269,0.452,0.544c-0.025,0.274-0.258,0.476-0.544,0.452	C67.139,23.02,66.822,23,66.5,23h-33C27.71,23,23,27.71,23,33.5v33C23,72.29,27.71,77,33.5,77h33C72.29,77,77,72.29,77,66.5v-17	c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v17C78,72.841,72.841,78,66.5,78z M77.5,40c-0.276,0-0.5-0.224-0.5-0.5v-2	c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v2C78,39.776,77.776,40,77.5,40z M77.5,47c-0.276,0-0.5-0.224-0.5-0.5v-4	c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v4C78,46.776,77.776,47,77.5,47z"
-                ></path>
-                <path
-                  fill="#1f212b"
-                  d="M69,83H31c-7.72,0-14-6.28-14-14V31c0-7.72,6.28-14,14-14h38c7.72,0,14,6.28,14,14v38	C83,76.72,76.72,83,69,83z M31,19c-6.617,0-12,5.383-12,12v38c0,6.617,5.383,12,12,12h38c6.617,0,12-5.383,12-12V31	c0-6.617-5.383-12-12-12H31z"
-                ></path>
-                <path
-                  fill="#fefdef"
-                  d="M61.957,48.415C58.749,48.972,54.504,49.28,50,49.28c-4.503,0-8.749-0.308-11.955-0.865	c-3.593-0.625-5.423-1.467-5.901-2.735C32.058,45.908,32,46.144,32,46.4v7.2c0,1.685,1.809,2.719,6.045,3.455	C41.25,57.612,45.497,57.92,50,57.92c4.504,0,8.749-0.308,11.958-0.865C66.192,56.319,68,55.285,68,53.6v-7.2	c0-0.256-0.056-0.492-0.141-0.72C67.38,46.948,65.549,47.79,61.957,48.415"
-                ></path>
-                <path
-                  fill="#fefdef"
-                  d="M61.957,59.935C58.749,60.492,54.504,60.8,50,60.8c-4.503,0-8.749-0.308-11.955-0.865	c-3.593-0.625-5.423-1.467-5.901-2.735C32.058,57.428,32,57.664,32,57.92v7.2c0,1.685,1.809,2.719,6.045,3.455	C41.25,69.132,45.497,69.44,50,69.44c4.504,0,8.749-0.308,11.958-0.865C66.192,67.839,68,66.805,68,65.12v-7.2	c0-0.256-0.056-0.492-0.141-0.72C67.38,58.467,65.549,59.31,61.957,59.935"
-                ></path>
-                <path
-                  fill="#fefdef"
-                  d="M61.958,31.425C58.75,30.867,54.504,30.56,50,30.56c-4.503,0-8.749,0.307-11.956,0.865	C33.809,32.161,32,33.195,32,34.88v7.2c0,1.685,1.809,2.719,6.044,3.455C41.251,46.093,45.497,46.4,50,46.4	c4.504,0,8.749-0.307,11.958-0.865C66.193,44.798,68,43.765,68,42.08v-7.2C68,33.195,66.193,32.161,61.958,31.425z M50,32	c9.147,0,16.56,1.29,16.56,2.88S59.147,37.76,50,37.76c-9.145,0-16.56-1.29-16.56-2.88S40.855,32,50,32z"
-                ></path>
-                <path
-                  fill="#5C7CFA"
-                  d="M56.235,41.517c-0.45,0-0.83-0.349-0.861-0.805c-0.032-0.476,0.327-0.889,0.804-0.921	c2.217-0.151,4.207-0.379,5.914-0.676c0.606-0.104,1.434-0.247,2.278-0.465c0.456-0.12,0.933,0.158,1.053,0.621	c0.119,0.462-0.159,0.933-0.621,1.052c-0.913,0.236-1.781,0.385-2.415,0.495c-1.765,0.307-3.814,0.542-6.092,0.697	C56.275,41.516,56.255,41.517,56.235,41.517z"
-                ></path>
-                <path
-                  fill="#5C7CFA"
-                  d="M56.235,53.037c-0.45,0-0.83-0.349-0.861-0.805c-0.032-0.476,0.327-0.889,0.804-0.921	c2.212-0.151,4.202-0.379,5.914-0.676c0.606-0.104,1.434-0.247,2.278-0.465c0.456-0.121,0.933,0.157,1.053,0.621	c0.119,0.462-0.159,0.933-0.621,1.052c-0.913,0.236-1.781,0.385-2.415,0.495c-1.77,0.308-3.819,0.542-6.092,0.697	C56.275,53.036,56.255,53.037,56.235,53.037z"
-                ></path>
-                <path
-                  fill="#5C7CFA"
-                  d="M56.235,64.556c-0.45,0-0.83-0.35-0.861-0.806c-0.032-0.476,0.327-0.888,0.804-0.92	c2.211-0.151,4.201-0.378,5.914-0.676c0.606-0.104,1.434-0.247,2.278-0.465c0.456-0.12,0.933,0.158,1.053,0.621	c0.119,0.462-0.159,0.933-0.621,1.052c-0.913,0.236-1.781,0.385-2.415,0.495c-1.771,0.308-3.821,0.542-6.092,0.697	C56.275,64.555,56.255,64.556,56.235,64.556z"
-                ></path>
-              </svg>
-            </div>
           </div>
         </div>
       </section>
 
       <!-- Projects -->
-      <section class="my-10 md:my-20">
+      <section class="my-10 md:my-20" id="projects">
         <div class="px-10">
           <h1 class="text-5xl font-bold py-8">Projects</h1>
           <div
-            class="grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+            class="grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 mx-auto"
           >
             <!-- Blog Site Card -->
             <article
@@ -572,11 +603,12 @@
         </div>
       </section>
 
-      <section class="my-10 md:my-20">
+      <!-- Socials -->
+      <section class="my-10 md:my-20" id="socials">
         <div class="px-10">
           <h1 class="text-5xl font-bold py-8">Socials</h1>
-          <div class="flex justify-between">
-            <div class="flex flex-wrap gap-6">
+          <div class="flex flex-wrap justify-between">
+            <div class="flex gap-6 py-2">
               <a class="cursor-pointer" href="mailto:csikosbenedek@gmail.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -702,7 +734,7 @@
                 </svg>
               </a>
             </div>
-            <div class="flex gap-4 items-center">
+            <div class="flex gap-4 items-center py-2">
               <a
                 class="cursor-pointer"
                 target="_blank"
