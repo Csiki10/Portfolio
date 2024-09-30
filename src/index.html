@@ -107,7 +107,7 @@
         </div>
       </div>
     </nav>
-    <main>
+    <main class="min-h-screen">
       <!-- Hero -->
       <section
         class="my-10 md:my-20 max-w-7xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center"
@@ -132,7 +132,7 @@
         <div class="flex flex-1 justify-center">
           <img
             class="rounded-full max-w-xs w-full h-auto object-cover"
-            src="./me.jpg"
+            src="./assets/me.jpg"
             alt="Benedek Csikós"
           />
         </div>
@@ -344,7 +344,141 @@
       <section class="my-10 md:my-20">
         <div class="max-w-7xl m-auto px-10">
           <h1 class="text-5xl font-bold py-8">Projects</h1>
-          <div class="felx flex-wrap"></div>
+          <div
+            class="grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+          >
+            <!-- Blog Site Card -->
+            <article
+              onclick="location.href='https://nix-html-blog.onrender.com/'"
+              class="cursor-pointer flex flex-col items-start justify-between p-3 rounded shadow-xl hover:bg-neutral-50"
+            >
+              <div>
+                <img
+                  class="rounded aspect-video h-full object-cover w-full"
+                  src="./assets/blog.png"
+                  alt="Blog Site"
+                />
+              </div>
+              <div class="flex items-center gap-x-4 text-xs mt-5">
+                <a
+                  class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200"
+                  >Js</a
+                >
+                <a
+                  class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200"
+                  >HTML</a
+                >
+                <a
+                  class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200"
+                  >CSS</a
+                >
+                <a
+                  class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200"
+                  >Tailwind</a
+                >
+              </div>
+              <div class="group relative">
+                <h3
+                  class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+                >
+                  <span class="absolute inset-0"></span>
+                  Blog Site Design & Development
+                </h3>
+                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                  A modern blog platform featuring a clean and responsive
+                  design. Built using HTML, CSS, and Tailwind CSS, the site
+                  offers seamless navigation and an enhanced reading experience.
+                </p>
+              </div>
+            </article>
+
+            <!-- React Developer Job Search Site Card -->
+            <article
+              onclick="location.href='https://react-job-listing-one.vercel.app/'"
+              class="cursor-pointer flex flex-col items-start justify-between p-3 rounded shadow-xl hover:bg-neutral-50"
+            >
+              <div>
+                <img
+                  class="rounded aspect-video h-full object-cover w-full"
+                  src="./assets/job-listing.png"
+                  alt="React Job Search Site"
+                />
+              </div>
+              <div class="flex items-center gap-x-4 text-xs mt-5">
+                <a
+                  class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200"
+                  >React</a
+                >
+                <a
+                  class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200"
+                  >TypeScript</a
+                >
+                <a
+                  class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200"
+                  >Tailwind</a
+                >
+              </div>
+              <div class="group relative">
+                <h3
+                  class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+                >
+                  <span class="absolute inset-0"></span>
+                  React Developer Job Search Site
+                </h3>
+                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                  A comprehensive job search platform for React developers,
+                  featuring dynamic job listings and filtering. Built with
+                  React, Tailwind CSS, and JavaScript to create an intuitive
+                  user interface and smooth experience.
+                </p>
+              </div>
+            </article>
+
+            <!-- Business Card Design Card -->
+            <article
+              onclick="location.href='https://nix-css-business-card.onrender.com/business_card.html'"
+              class="cursor-pointer flex flex-col items-start justify-between p-3 rounded shadow-xl hover:bg-neutral-50"
+            >
+              <div>
+                <img
+                  class="rounded aspect-video h-full object-cover w-full"
+                  src="./assets/business-card.png"
+                  alt="Business Card Design"
+                />
+              </div>
+              <div class="flex items-center gap-x-4 text-xs mt-5">
+                <a
+                  class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200"
+                  >CSS</a
+                >
+                <a
+                  class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200"
+                  >HTML</a
+                >
+              </div>
+              <div class="group relative">
+                <h3
+                  class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+                >
+                  <span class="absolute inset-0"></span>
+                  Business Card Design Project
+                </h3>
+                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                  A sleek and creative business card design project, crafted
+                  using HTML and CSS. This design focuses on clean aesthetics
+                  and branding, offering a professional yet stylish look for
+                  clients.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About me -->
+      <section class="my-10 md:my-20">
+        <div class="max-w-7xl m-auto px-10">
+          <h1 class="text-5xl font-bold py-8">About me</h1>
         </div>
       </section>
     </main>
