@@ -34,7 +34,11 @@ body {
     @apply bg-gray-100 w-fit px-3 py-1 rounded-full font-medium shadow
 }
 
-.article {
+.projects-container {
+    @apply grid grid-cols-1 max-w-3xl m-auto lg:max-w-none lg:grid-cols-3 gap-10 mx-auto
+}
+
+.projects-container .project {
     @apply flex flex-col items-start p-3 justify-between rounded-xl border-2 shadow-xl
 }
 
@@ -45,4 +49,5 @@ body {
 .btn-secondary {
     @apply bg-white text-gray-800 rounded-xl flex-1 text-lg font-semibold py-2 text-center border-2  hover:bg-yellow-500 hover:text-white ease-in-out duration-300
 }
+
 
