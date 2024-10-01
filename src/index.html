@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./reset.css" />
+    <!-- <link rel="stylesheet" href="./reset.css" /> -->
     <link href="./output.css" rel="stylesheet" />
     <title>Csiki's portfolio</title>
   </head>
@@ -149,75 +149,43 @@
       <section class="my-10 md:my-20" id="about">
         <div class="px-10">
           <h1 class="text-5xl font-bold py-8">About</h1>
-          <div class="flex flex-wrap gap-4">
+          <div class="card-container">
             <!-- Card -->
-            <div
-              class="flex flex-row space-y-14 shadow-xl rounded-xl p-3 justify-center"
-            >
-              <div class="flex items-center">
-                <img
-                  style="height: 6rem"
-                  src="assets/obuda1.png"
-                  alt="Obuda university"
-                />
+            <div class="card">
+              <div class="image-container">
+                <img src="assets/obuda1.png" alt="Obuda university" />
               </div>
-              <div class="flex flex-col justify-between p-2">
-                <div class="">
-                  <h2 class="text-2xl font-bold mb-3">Obuda University</h2>
-                  <h3 class="text-xl font-semibold">Computer Engineer - BSC</h3>
-                  <h4 class="text-md">Software design and development</h4>
-                </div>
-                <div>
-                  <p>2020.09 – 2024.01</p>
-                </div>
+              <div class="text-container">
+                <h2 class="text-2xl font-bold mb-3">Obuda University</h2>
+                <h3 class="text-xl font-semibold">Computer Engineer - BSC</h3>
+                <h4 class="text-md mb-3">Software design and development</h4>
+                <p class="card-badge">2020.09 – 2024.01</p>
               </div>
             </div>
 
             <!-- Card -->
-            <div
-              class="flex flex-row space-y-14 shadow-xl rounded-xl p-3 justify-center"
-            >
-              <div class="flex items-center">
-                <img
-                  style="height: 4rem"
-                  src="assets/evosoft.png"
-                  alt="Obuda university"
-                />
+            <div class="card">
+              <div class="image-container">
+                <img src="assets/evo1.png" alt="Obuda university" />
               </div>
-              <div class="flex flex-col justify-between p-2">
-                <div class="">
-                  <h2 class="text-2xl font-bold mb-3">Evosot hungary</h2>
-                  <h3 class="text-xl font-semibold">Full-Stack Trainee</h3>
-                  <h4 class="text-md">Full-Stack developer: .NET MVC</h4>
-                </div>
-                <div>
-                  <p>2022.12 – 2024.02</p>
-                </div>
+              <div class="text-container">
+                <h2 class="text-2xl font-bold mb-3">Evosot hungary</h2>
+                <h3 class="text-xl font-semibold">Full-Stack Trainee</h3>
+                <h4 class="text-md mb-3">Tech stack: .NET MVC</h4>
+                <p class="card-badge">2022.12 – 2024.02</p>
               </div>
             </div>
 
             <!-- Card -->
-            <div
-              class="flex flex-row space-y-14 shadow-xl rounded-xl p-3 justify-center"
-            >
-              <div class="flex items-center">
-                <img
-                  style="height: 4rem"
-                  src="assets/unix.UNK"
-                  alt="Obuda university"
-                />
+            <div class="card">
+              <div class="image-container">
+                <img src="assets/unix.UNK" alt="Obuda university" />
               </div>
-              <div class="flex flex-col justify-between p-2">
-                <div class="flex flex-col space-y-2">
-                  <h2 class="text-2xl font-bold">UNIX Automotive</h2>
-                  <h3 class="text-xl font-semibold">Web developer</h3>
-                  <h4 class="text-md">Full-Stack developer: Angular .NET</h4>
-                </div>
-                <div>
-                  <p class="bg-gray-100 rounded-full w-fit py-1 px-2">
-                    2024.03 – 2024.06
-                  </p>
-                </div>
+              <div class="text-container">
+                <h2 class="text-2xl font-bold mb-3">UNIX Automotive</h2>
+                <h3 class="text-xl font-semibold">Web developer</h3>
+                <h4 class="text-md mb-3">Tech stack: Angular .NET</h4>
+                <p class="card-badge">2024.03 – 2024.06</p>
               </div>
             </div>
           </div>
