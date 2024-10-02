@@ -47,7 +47,7 @@ h1 {
 }
 
 .technology-container { 
-    @apply flex flex-wrap gap-6 justify-center
+    @apply flex flex-wrap gap-5 justify-center
 }
 
 .technology-container .technology {
