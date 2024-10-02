@@ -894,9 +894,32 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300\/75 {
+  background-color: rgb(209 213 219 / 0.75);
+}
+
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.bg-green-400\/75 {
+  background-color: rgb(74 222 128 / 0.75);
 }
 
 .bg-orange-400 {
@@ -940,31 +963,9 @@ video {
   background-color: rgb(250 204 21 / 0.75);
 }
 
-.bg-gray-200\/75 {
-  background-color: rgb(229 231 235 / 0.75);
-}
-
-.bg-gray-200 {
+.bg-yellow-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300\/75 {
-  background-color: rgb(209 213 219 / 0.75);
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-green-400\/75 {
-  background-color: rgb(74 222 128 / 0.75);
-}
-
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1208,9 +1209,7 @@ h1 {
 
 .menu-item:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .hero-text {
