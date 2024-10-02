@@ -63,7 +63,7 @@ h1 {
 }
 
 .projects-container .project-badge {
-    @apply relative z-10 rounded-full px-3 py-1.5 font-medium
+    @apply relative z-10 rounded-full px-2 py-1 font-medium
 }
 
 .btn-primary {
