@@ -47,11 +47,11 @@ h1 {
 }
 
 .technology-container { 
-    @apply flex flex-wrap gap-5 justify-center
+    @apply flex flex-wrap gap-x-2 gap-y-4 sm:gap-5 justify-center
 }
 
 .technology-container .technology {
-    @apply p-2 shadow-xl rounded-xl
+    @apply p-0.5 sm:p-2 shadow-xl rounded-xl
 }
 
 .projects-container {
