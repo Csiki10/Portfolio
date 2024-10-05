@@ -598,10 +598,6 @@ video {
   margin: 0.5rem;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -721,20 +717,12 @@ video {
   width: 100%;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-52 {
   max-width: 13rem;
 }
 
 .max-w-7xl {
   max-width: 80rem;
-}
-
-.max-w-none {
-  max-width: none;
 }
 
 .max-w-xs {
@@ -765,8 +753,12 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -801,8 +793,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-10 {
-  gap: 2.5rem;
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-3 {
@@ -920,6 +916,15 @@ video {
   background-color: rgb(251 146 60 / 0.75);
 }
 
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-red-400\/75 {
+  background-color: rgb(248 113 113 / 0.75);
+}
+
 .bg-sky-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(56 189 248 / var(--tw-bg-opacity));
@@ -950,11 +955,6 @@ video {
 
 .bg-yellow-400\/75 {
   background-color: rgb(250 204 21 / 0.75);
-}
-
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1372,19 +1372,23 @@ svg:hover, .card:hover {
 }
 
 .projects-container {
-  margin: auto;
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  max-width: 48rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 2.5rem;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .projects-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1024px) {
   .projects-container {
-    max-width: none;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.5rem;
   }
 }
 
@@ -1433,8 +1437,8 @@ svg:hover, .card:hover {
 }
 
 .btn-primary:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(234 179 8 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .btn-secondary {
@@ -1485,8 +1489,8 @@ svg:hover, .card:hover {
 }
 
 .btn-special:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(234 179 8 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .footer-container {
@@ -1526,11 +1530,6 @@ svg:hover, .card:hover {
 .hover\:border-gray-800:hover {
   --tw-border-opacity: 1;
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
-}
-
-.hover\:border-yellow-500:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
 .hover\:bg-gray-700:hover {
@@ -1590,6 +1589,10 @@ svg:hover, .card:hover {
     max-width: 20rem;
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1638,12 +1641,12 @@ svg:hover, .card:hover {
 }
 
 @media (min-width: 1024px) {
-  .lg\:max-w-none {
-    max-width: none;
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .lg\:gap-2 {
+    gap: 0.5rem;
   }
 }
 

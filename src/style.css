@@ -90,7 +90,7 @@ svg, .card {
 }
 
 .projects-container {
-    @apply grid grid-cols-1 max-w-3xl m-auto lg:max-w-none lg:grid-cols-3 gap-10 mx-auto
+    @apply grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-2 mx-auto
 }
 
 .projects-container .project {
@@ -103,7 +103,7 @@ svg, .card {
 
 .btn-primary {
     @apply bg-gray-800 text-white rounded-xl flex-1 text-lg font-semibold py-2 text-center mr-3 border-2 m-2 
-      hover:border-yellow-500 
+      hover:bg-yellow-500 
       ease-in-out duration-300
 }
 
@@ -115,7 +115,7 @@ svg, .card {
 
 .btn-special {
     @apply bg-gray-800 text-white text-lg font-bold py-2 px-5 rounded-xl w-fit shadow-lg border-2
-     hover:border-yellow-500
+     hover:bg-yellow-500
       ease-in-out duration-300
 }
 
