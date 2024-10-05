@@ -2,6 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+    font-family: TTFirsNeueTrialRegular;
+    src: url(./assets/fonts/TTFirsNeueTrialRegular.ttf);
+}
+
 @keyframes appear {
     from {
       opacity: 0;
@@ -13,27 +18,35 @@
     }
 }
 
-h1 .card, .technology, .project{
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
 html {
     scroll-behavior: smooth;
 }  
 
 body {
-    
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card, .technology, .project{
+    animation: appear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 h1 {
+    font-family: TTFirsNeueTrialRegular;
     @apply text-3xl text-center sm:text-left sm:text-5xl font-bold py-8
 }
 
+nav a, nav p{
+    font-family: TTFirsNeueTrialRegular;
+}
+
 .menu-item {
-    @apply block rounded-md px-3 py-2 text-center font-bold hover:bg-yellow-500 
+    @apply block rounded-md px-3 py-2 text-center font-medium hover:bg-yellow-500 hover:font-semibold
+}
+
+.hero {
+    @apply my-10 md:my-20 flex flex-col-reverse md:flex-row justify-between items-center
 }
 
 .hero-text {
