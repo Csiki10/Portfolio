@@ -29,7 +29,7 @@ body {
 .card, .technology, .project{
     animation: appear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
 }
 
 h1 {
@@ -74,7 +74,7 @@ nav a, nav p{
 }
 
 .text-container .card-badge {
-    @apply bg-gray-100 w-fit px-3 py-1 rounded-full font-medium shadow
+    @apply bg-gray-100 w-fit px-3 py-1 rounded-full font-medium shadow 
 }
 
 .technology-container { 
@@ -82,7 +82,7 @@ nav a, nav p{
 }
 
 .technology-container .technology {
-    @apply p-0.5 sm:p-2 shadow-xl rounded-xl 
+    @apply p-0.5 sm:p-2 shadow-xl rounded-xl relative
 }
 
 svg, .card {
@@ -102,13 +102,13 @@ svg, .card {
 }
 
 .btn-primary {
-    @apply bg-gray-800 text-white rounded-xl flex-1 text-lg font-semibold py-2 text-center mr-3 border-2 m-2 
+    @apply bg-gray-800 text-white rounded-xl flex-1 text-lg font-semibold py-2 text-center border-2
     hover:ring-2 hover:ring-yellow-500
-      ease-in-out duration-300
+    ease-in-out duration-300
 }
 
 .btn-secondary {
-    @apply bg-white text-gray-800 rounded-xl flex-1 text-lg font-semibold py-2 text-center border-2 m-2
+    @apply bg-white text-gray-800 rounded-xl flex-1 text-lg font-semibold py-2 text-center border-2
     hover:ring-2 hover:ring-gray-800
     ease-in-out duration-300
 }
