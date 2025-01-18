@@ -2,11 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@font-face {
-    font-family: TTFirsNeueTrialRegular;
-    src: url(./assets/fonts/TTFirsNeueTrialRegular.ttf);
-}
-
 @keyframes appear {
     from {
       opacity: 0;
@@ -33,12 +28,7 @@ body {
 }
 
 h1 {
-    font-family: TTFirsNeueTrialRegular;
     @apply text-3xl text-center sm:text-left sm:text-5xl font-bold py-8
-}
-
-nav a, nav p{
-    font-family: TTFirsNeueTrialRegular;
 }
 
 .menu-item {
