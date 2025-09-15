@@ -28,7 +28,12 @@ body {
 }
 
 h1 {
+    font-family: Roboto;
     @apply text-3xl text-center sm:text-left sm:text-5xl font-bold py-8
+}
+
+nav a, nav p{
+    font-family: Roboto;
 }
 
 .menu-item {
